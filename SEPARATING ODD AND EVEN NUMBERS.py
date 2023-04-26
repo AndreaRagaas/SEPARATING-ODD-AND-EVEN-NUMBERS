@@ -19,3 +19,8 @@ with open("even.txt", "w") as even_file:
 #creating the header
 print("WELCOME TO ODD AND EVEN NUMBERS PROGRAM")
 
+#creating options
+print("Main Menu")
+print("1.Odd Numbers")
+print("2.Even Numbers")
+print("3.Exit")
