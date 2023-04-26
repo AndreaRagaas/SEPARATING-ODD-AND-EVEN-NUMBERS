@@ -24,3 +24,29 @@ print("Main Menu")
 print("1.Odd Numbers")
 print("2.Even Numbers")
 print("3.Exit")
+
+#creating an area to put the option
+def MENU():
+    while True:
+        try:
+            choice = int(input("Enter the Choice:"))
+            #creating the program for every option
+            if choice == 1:
+                print("ODD NUMBERS")
+                with open('odd.txt', 'r') as odd:
+                    for line in odd:
+                        print(line.strip())
+            elif choice == 2:
+                print("EVEN NUMBERS")
+                with open('even.txt', 'r') as even:
+                    for line in even:
+                        print(line.strip())
+            elif choice == 3:
+                print("Goodbye!")
+                return
+            else:
+                print("Invalid choice. Please enter a number between 1 and 3.")
+        except ValueError:
+            print("Invalid choice. Please enter a number between 1 and 3.")
+            
+MENU()
