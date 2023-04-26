@@ -15,3 +15,7 @@ with open("odd.txt", "w") as odd_file:
 with open("even.txt", "w") as even_file:
     for num in even_numbers:
         even_file.write(str(num) + "\n")
+
+#creating the header
+print("WELCOME TO ODD AND EVEN NUMBERS PROGRAM")
+
