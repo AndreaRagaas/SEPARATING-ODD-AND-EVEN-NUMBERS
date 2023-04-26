@@ -50,3 +50,6 @@ def MENU():
             print("Invalid choice. Please enter a number between 1 and 3.")
             
 MENU()
+
+#close the file
+my_file.close()
